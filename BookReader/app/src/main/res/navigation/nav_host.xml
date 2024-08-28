@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.bookreader.ui.theme.views.fragments.HomeFragment"
+        android:label="Home_fragment" >
+        <action
+            android:id="@+id/action_home_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.bookreader.ui.theme.views.fragments.SearchFragment"
+        android:label="Search_Fragment" />
+    <fragment
+        android:id="@+id/browse"
+        android:name="com.example.bookreader.ui.theme.views.fragments.SearchFragment"
+        android:label="Browse_Fragment" />
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.example.bookreader.ui.theme.views.activities.DetailsActivity"
+        android:label="DetailsActivity" />
+    <fragment
+        android:id="@+id/downloadFragment"
+        android:name="com.example.bookreader.ui.theme.views.fragments.DownloadFragment"
+        android:label="DownloadFragment" />
+    <fragment
+        android:id="@+id/library"
+        android:name="com.example.bookreader.ui.theme.views.fragments.LibraryFragment"
+        android:label="LibraryFragment" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.bookreader.ui.theme.views.fragments.EditProfileFragment"
+        android:label="EditProfileFragment" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.bookreader.ui.theme.views.fragments.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.bookreader.ui.theme.views.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.bookreader.ui.theme.views.fragments.UserProfileFragment"
+        android:label="UserProfileFragment" />
+</navigation>

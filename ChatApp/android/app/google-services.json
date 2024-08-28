@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "816032089362",
+    "project_id": "messageme-78da4",
+    "storage_bucket": "messageme-78da4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816032089362:android:47c76c3f86cf5c68171fcb",
+        "android_client_info": {
+          "package_name": "com.asmaahamdy.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCR4dYEgCMw6Jp8sF86xLThne2fB1cT9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
